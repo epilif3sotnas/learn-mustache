@@ -10,4 +10,5 @@ binDir          = "target"
 bin             = @["main"]
 backend         = "cpp"
 
-requires        "nim >= 1.6"
+requires        "nim >= 1.6",
+                "mustache >= 0"
