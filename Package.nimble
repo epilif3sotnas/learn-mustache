@@ -11,4 +11,5 @@ bin             = @["main"]
 backend         = "cpp"
 
 requires        "nim >= 1.6",
-                "mustache >= 0"
+                "mustache >= 0",
+                "prologue >= 0"
