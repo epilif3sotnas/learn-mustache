@@ -1,3 +1,7 @@
+# internal
+import
+  ./view/views
+
 # external
 import
   prologue
@@ -10,8 +14,11 @@ proc main() =
   )
   let app = newApp(settings=settings)
   app.addRoute([
-    pattern("", )
-  ], "")
+    pattern("/greeter/@name", greeter, HttpGet),
+    pattern("/generate-code/@language", generateCode, HttpGet),
+    pattern("/index", index, HttpGet),
+    pattern("/inventory", inventory, HttpGet)
+  ])
 
 when isMainModule:
   main()
