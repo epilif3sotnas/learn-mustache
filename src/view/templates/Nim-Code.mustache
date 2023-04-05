@@ -1,0 +1,40 @@
+type Car* = ref object
+    engine: string
+    model: string
+    brand: string
+    power: uint8
+
+proc newCar() =
+    return Car()
+
+proc newCar(engine: string, model: string, brand: string, power: uint8) =
+    return Car(
+        engine: engine,
+        model: model,
+        brand: brand,
+        power: power
+    )
+
+proc getEngine(self: Car) =
+    return self.engine
+
+proc setEngine(self: Car, engine: string) =
+    self.engine = engine
+
+proc getModel(self: Car) =
+    return self.model
+
+proc setModel(self: Car, model: string) =
+    self.model = model
+
+proc getBrand(self: Car) =
+    return self.brand
+
+proc setBrand(self: Car, brand: string) =
+    self.brand = brand
+
+proc getPower(self: Car) =
+    return self.power
+
+proc setPower(self: Car, power: string) =
+    self.power = power

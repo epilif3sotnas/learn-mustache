@@ -1,0 +1,41 @@
+class Car(object):
+    __engine: str = None
+    __model: str = None
+    __brand: str = None
+    __power: int = None
+
+    def __init__(
+        self,
+        engine: str = None,
+        model: str = None,
+        brand: str = None,
+        power: int = None
+    ):
+        self.__engine = engine
+        self.__model = model
+        self.__brand = brand
+        self.__power = power
+
+    def get_engine(self):
+        return self.__engine
+
+    def set_engine(self, engine: str):
+        self.__engine = engine
+
+    def get_model(self):
+        return self.__model
+
+    def set_model(self, model: str):
+        self.__model = model
+
+    def get_brand(self):
+        return self.__brand
+
+    def set_brand(self, brand: str):
+        self.__brand = brand
+
+    def get_power(self):
+        return self.__power
+
+    def set_power(self, power: str):
+        self.__power = power
