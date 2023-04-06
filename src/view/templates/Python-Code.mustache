@@ -1,41 +1,41 @@
-class Car(object):
-    __engine: str = None
-    __model: str = None
-    __brand: str = None
-    __power: int = None
+class {{className}}(object):
+    __{{atributeName1}}: str = None
+    __{{atributeName2}}: str = None
+    __{{atributeName3}}: str = None
+    __{{atributeName4}}: str = None
 
     def __init__(
         self,
-        engine: str = None,
-        model: str = None,
-        brand: str = None,
-        power: int = None
-    ):
-        self.__engine = engine
-        self.__model = model
-        self.__brand = brand
-        self.__power = power
+        {{atributeName1}}: str = None,
+        {{atributeName2}}: str = None,
+        {{atributeName3}}: str = None,
+        {{atributeName4}}: str = None
+    ) -> object:
+        self.__{{atributeName1}} = {{atributeName1}}
+        self.__{{atributeName2}} = {{atributeName2}}
+        self.__{{atributeName3}} = {{atributeName3}}
+        self.__{{atributeName4}} = {{atributeName4}}
 
-    def get_engine(self):
-        return self.__engine
+    def get_{{atributeName1}}(self) -> str:
+        return self.__{{atributeName1}}
 
-    def set_engine(self, engine: str):
-        self.__engine = engine
+    def set_{{atributeName1}}(self, {{atributeName1}}: str):
+        self.__{{atributeName1}} = {{atributeName1}}
 
-    def get_model(self):
-        return self.__model
+    def get_{{atributeName2}}(self) -> str:
+        return self.__{{atributeName2}}
 
-    def set_model(self, model: str):
-        self.__model = model
+    def set_{{atributeName2}}(self, {{atributeName2}}: str):
+        self.__{{atributeName2}} = {{atributeName2}}
 
-    def get_brand(self):
-        return self.__brand
+    def get_{{atributeName3}}(self) -> str:
+        return self.__{{atributeName3}}
 
-    def set_brand(self, brand: str):
-        self.__brand = brand
+    def set_{{atributeName3}}(self, {{atributeName3}}: str):
+        self.__{{atributeName3}} = {{atributeName3}}
 
-    def get_power(self):
-        return self.__power
+    def get_{{atributeName4}}(self) -> str:
+        return self.__{{atributeName4}}
 
-    def set_power(self, power: str):
-        self.__power = power
+    def set_{{atributeName4}}(self, {{atributeName4}}: str):
+        self.__{{atributeName4}} = {{atributeName4}}

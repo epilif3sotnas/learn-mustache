@@ -1,31 +1,31 @@
-class Car {
-    private String engine = null;
-    private String model = null;
-    private String brand = null;
-    private short power = null;
+class {{className}} {
+    private String {{atributeName1}} = null;
+    private String {{atributeName2}} = null;
+    private String {{atributeName3}} = null;
+    private String {{atributeName4}} = null;
 
-    public Car() {}
+    public {{className}}() {}
 
-    public Car(String engine, String model, String brand, short power) {
-        this.engine = engine;
-        this.model = model;
-        this.brand = brand;
-        this.power = power;
+    public {{className}}(String {{atributeName1}}, String {{atributeName1}}, String {{atributeName3}}, String {{atributeName4}}) {
+        this.{{atributeName1}} = {{atributeName1}};
+        this.{{atributeName1}} = {{atributeName1}};
+        this.{{atributeName3}} = {{atributeName3}};
+        this.{{atributeName4}} = {{atributeName4}};
     }
 
-    public String getEngine() { return this.engine; }
+    public String get{{atributeName1Camel}}() { return this.{{atributeName1}}; }
 
-    public void setEngine(String engine) { this.engine = engine; }
+    public void set{{atributeName1Camel}}(String {{atributeName1}}) { this.{{atributeName1}} = {{atributeName1}}; }
 
-    public String getModel() { return this.model; }
+    public String get{{atributeName2Camel}}() { return this.{{atributeName2}}; }
 
-    public void setModel(String model) { this.model = model; }
+    public void set{{atributeName2Camel}}(String {{atributeName2}}) { this.{{atributeName2}} = {{atributeName2}}; }
 
-    public String getBrand() { return this.brand; }
+    public String get{{atributeName3Camel}}() { return this.{{atributeName3}}; }
 
-    public void setBrand(String brand) { this.brand = brand; }
+    public void set{{atributeName3Camel}}(String {{atributeName3}}) { this.{{atributeName3}} = {{atributeName3}}; }
 
-    public String getPower() { return this.power; }
+    public String get{{atributeName4Camel}}() { return this.{{atributeName4}}; }
 
-    public void setPower(String power) { this.power = power; }
+    public void set{{atributeName4Camel}}(String {{atributeName4}}) { this.{{atributeName4}} = {{atributeName4}}; }
 }

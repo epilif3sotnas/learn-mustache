@@ -1,40 +1,40 @@
-type Car* = ref object
-    engine: string
-    model: string
-    brand: string
-    power: uint8
+type {{className}}* = ref object
+    {{atributeName1}}: string
+    {{atributeName2}}: string
+    {{atributeName3}}: string
+    {{atributeName4}}: string
 
-proc newCar() =
-    return Car()
+proc new{{className}}() =
+    return {{className}}()
 
-proc newCar(engine: string, model: string, brand: string, power: uint8) =
-    return Car(
-        engine: engine,
-        model: model,
-        brand: brand,
-        power: power
+proc new{{className}}({{atributeName1}}: string, {{atributeName2}}: string, {{atributeName3}}: string, {{atributeName4}}: uint8) =
+    return {{className}}(
+        {{atributeName1}}: {{atributeName1}},
+        {{atributeName2}}: {{atributeName2}},
+        {{atributeName3}}: {{atributeName3}},
+        {{atributeName4}}: {{atributeName4}}
     )
 
-proc getEngine(self: Car) =
-    return self.engine
+proc get{{atributeName1Camel}}(self: {{className}}) =
+    return self.{{atributeName1}}
 
-proc setEngine(self: Car, engine: string) =
-    self.engine = engine
+proc set{{atributeName1Camel}}(self: {{className}}, {{atributeName1}}: string) =
+    self.{{atributeName1}} = {{atributeName1}}
 
-proc getModel(self: Car) =
-    return self.model
+proc get{{atributeName2Camel}}(self: {{className}}) =
+    return self.{{atributeName2}}
 
-proc setModel(self: Car, model: string) =
-    self.model = model
+proc set{{atributeName2Camel}}(self: {{className}}, {{atributeName2}}: string) =
+    self.{{atributeName2}} = {{atributeName2}}
 
-proc getBrand(self: Car) =
-    return self.brand
+proc get{{atributeName3Camel}}(self: {{className}}) =
+    return self.{{atributeName3}}
 
-proc setBrand(self: Car, brand: string) =
-    self.brand = brand
+proc set{{atributeName3Camel}}(self: {{className}}, {{atributeName3}}: string) =
+    self.{{atributeName3}} = {{atributeName3}}
 
-proc getPower(self: Car) =
-    return self.power
+proc get{{atributeName4Camel}}(self: {{className}}) =
+    return self.{{atributeName4}}
 
-proc setPower(self: Car, power: string) =
-    self.power = power
+proc set{{atributeName4Camel}}(self: {{className}}, {{atributeName4}}: string) =
+    self.{{atributeName4}} = {{atributeName4}}
