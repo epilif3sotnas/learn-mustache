@@ -1,4 +1,4 @@
-## About spinning-donut
+## About learn-mustache
 
 This repository was built with the goal to learn Mustache logic-less templates for some projects that I have in mind.
 

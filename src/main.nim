@@ -18,8 +18,7 @@ proc main() =
   app.addRoute([
     pattern("/greeter/{name}", greeter, HttpGet),
     pattern("/generate-code/{language}", generateCode, HttpPost),
-    pattern("/index", index, HttpGet),
-    pattern("/inventory", inventory, HttpGet)
+    pattern("/index", index, HttpGet)
   ])
   app.run()
 
